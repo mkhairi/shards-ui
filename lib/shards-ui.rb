@@ -1,4 +1,4 @@
-require "shards/ui/version"
+require "shards-ui/version"
 
 module Shards
   module Ui
@@ -56,7 +56,7 @@ module Shards
       end
 
       def register_rails_engine
-        require 'shards/ui/engine'
+        require 'shards-ui/engine'
       end
 
       def register_sprockets

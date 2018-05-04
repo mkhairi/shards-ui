@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "shards/ui/version"
+require "shards-ui/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "shards-ui"
@@ -9,14 +9,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["mkhairi"]
   spec.email         = ["khairi@labs.my"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{Shards is a free and modern Bootstrap 4 (final) UI toolkit.}
+  spec.description   = %q{A modern UI kit packed extra custom components built on top of Bootstrap 4 (final)}
   spec.homepage      = "https://github.com/mkhairi/shards-ui"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
+
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
