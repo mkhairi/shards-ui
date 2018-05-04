@@ -70,3 +70,5 @@ module Shards
     end
   end
 end
+
+Shards::Ui.load!
